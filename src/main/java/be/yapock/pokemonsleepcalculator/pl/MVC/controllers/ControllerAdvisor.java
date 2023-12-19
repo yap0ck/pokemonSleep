@@ -1,4 +1,4 @@
-package be.yapock.pokemonsleepcalculator.pl.controllers;
+package be.yapock.pokemonsleepcalculator.pl.MVC.controllers;
 
 import be.yapock.pokemonsleepcalculator.pl.models.error.Error;
 import jakarta.persistence.EntityNotFoundException;

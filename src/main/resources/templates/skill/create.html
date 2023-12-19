@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Skill</title>
+  <th:block th:replace="~{fragment/fragments :: css}"></th:block>
+</head>
+<body>
+  <th:block th:replace="~{fragment/fragments :: header}"></th:block>
+  <h1>Ajouter une compétence</h1>
+  <form th:object="${skill}" th:action="@{/skill/create}" method="post">
+    <label>Nom : <input th:field="*{name()}"/></label>
+    <label>Grade :
+      <select th:field="*{grade()}">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+      </select>
+    </label>
+    <label>Description : <textarea th:field="*{description()}"></textarea></label>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
