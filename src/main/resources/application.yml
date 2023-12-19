@@ -1,6 +1,6 @@
 Spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/aeroport
+        url: jdbc:postgresql://localhost:5432/pokesleep
         username: postgres
         password: admin
         driver-class-name: org.postgresql.Driver
